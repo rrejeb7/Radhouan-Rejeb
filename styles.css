@@ -1,0 +1,386 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the navigation bar */
+nav {
+    background-color: #b33232;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the navigation bar */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .logo img {
+    height: 100px; /* Adjust height as needed  - */        
+    vertical-align: middle;
+    border-radius: 10px ;
+    margin: 20px;
+    font-size: medium;
+    font-weight: 100px;
+    
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+img {
+    width: 75px; /* Adjust size as needed */
+    height: 75px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Rounded corners */
+    /* Additional styling */
+}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?fami ly=Poppins:wght@400;500;600&display=swap");
+:root {
+--first-color: hsl (244, 75%, 57%);
+--second-color: hsl (249, 64%, 47%);
+--title-color: hsl (244, 12%, 12%);
+--text-color: hsl (244, 4%, 36%);
+--body-color: hsl (208, 97%, 85%);
+--body-font: "Poppins", sans-serif;
+--h2-font-size: 1.25rem;
+--small-font-size: 0.813rem;
+--smaller-font-size: 0.75rem;
+--font-medium: 500;
+--font-semi-bold: 600;
+}
+@media screen and (min-width: 1024px) {
+:root {
+--h2-font-size: 1.75rem;
+--normal-font-size: 1rem;
+--small-font-size: 0.875rem;
+--smaller-font-size: 0.813rem;
+}
+}
+box-sizing: border-box;
+padding: 0;
+ margin: 0;
+
+}
+ body {
+background-color: var(--body-color);
+font-family: var(--body-font);
+color: var(--text-color);
+.input, button {
+font-family: var(-body-font);
+border: none;
+outline: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+.login_content,
+.login_form,
+.login_inputs {
+display: grid;
+.login_content {
+position: relative;
+ height: 100vh;
+
+ align-items: center;
+
+ .login img {
+
+ position: absolute;
+
+ width: 100%;
+
+height: 100%;
+
+ object-fit: cover;
+ object-position: center;
+}
+.login_form {
+position: relative;
+background-color: hsla (244, 16%, 92%, 0.6);
+border: 2px solid hsla(244, 16%, 92%, 0.75);
+margin-inline: 1.5rem;
+row-gap: 1.25rem;
+backdrop-filter: blur(20px);
+padding: 2rem;
+border-radius: 1rem;
+ .login_title {
+
+ color: var(--title-color);
+ font-size: var(--h2-font-size);
+ margin-bottom: 0.5rem;
+.login_title span {
+ color: var(--first-color);
+}
+.login_description {
+ font-size: var(--small-font-size);
+}
+.login_inputs {
+row-gap: 0.75rem;
+margin-bottom: 0.5rem;
+}
+.login_label {
+display: block;
+color: var(--title-color);
+font-size: var(--small-font-size);
+font-weight: var(--font-semi-bold);
+ margin-bottom: 0.25rem;
+}
+.login_input {
+ width: 100%;
+padding: 14px 12px;
+ border-radius: 6px;
+ border: 2px solid var(--text-color);
+background-color: hsla (244, 16%, 92%, 0.6);
+color: var(--title-color);
+font-size: var(--smaller-font-size);
+font-weight: var(--font-medium);
+transition: border 0.4s;
+}
+.login_input::placeholder {
+ color: var(--text-color);
+}
+ .login_input:focus,
+.login_input: valid {
+border: 2px solid var(--first-color);
+}
+.login_box {
+position: relative;
+ }
+.login_box .login_input {
+ padding-right: 36px;
+ .login_eye {
+width: max-content;
+ height: max-content;
+ position: absolute;
+ right: 0.75rem;
+ top: 0;
+ bottom: 0;
+ margin: auto 0;
+font-size: 1.25rem;
+ cursor: pointer;
+}
+.login_check {
+display: flex;
+column-gap: 0.5rem;
+align-items: center;
+.login_check-input {
+appearance: none;
+width: 16px;
+height: 16px;
+border: 2px solid var(--text-color);
+background-color: hsla(244, 16%, 92%, 0.2);
+border-radius: 0.25rem;
+&D
+.login_check-input:checked {
+ background: var(--first-color);
+.login_check-input:checked::before {
+ content: "";
+ display: block;
+ color: #fff;
+font-size: 0.75rem;
+ transform: translate (1.5px, -2.5px);
+.login_check-label {
+font-size: var(--small-font-size);
+.}
+ .login_buttons {
+
+display: flex;
+
+column-gap: 0.75rem;
+}
+.login_button {
+
+ width: 100%;
+
+ padding: 14px 2rem;
+
+border-radius: 6px;
+
+ background: linear-gradient(180deg, var(--first-c olor), var(--second-color));
+
+color: #fff;
+
+ font-size: var(--small-font-size);
+
+font-weight: var(--font-semi-bold);
+
+box-shadow: 0 6px 24px hsla (244, 75%, 48%, 0.5);
+
+margin-bottom: 1rem;
+
+cursor: pointer;
+}
+.login_button-ghost {
+
+background: hsla (244, 16%, 92%, 0.6);
+
+border: 2px solid var(--first-color);
+
+color: var(--first-color);
+
+box-shadow: none;
+.login_forgot {
+
+font-size: var(--smaller-font-size);
+
+font-weight: var(--font-semi-bold);
+
+color: var(--first-color);
+
+text-decoration: none;
+ }
+
+}
+@media screen and (max-width: 360px) {
+
+.login_buttons {
+
+flex-direction: column;
+
+}
+}
+
+@media screen and (min-width: 576px) {
+
+.login_form {
+
+width: 450px;
+
+justify-self: center;
+}
+}
+@media screen and (min-width: 1064px) {
+
+.container {
+
+height: 100vh;
+
+display: grid;
+
+place-items: center;
+
+}
+
+.login_content {
+
+width: 1024px;
+
+height: 600px;
+
+}
+
+.login_img {
+
+border-radius: 3.5rem;
+
+box-shadow: 0 24px 48px hsla (244, 75%, 36%, 0.45);
+
+}
+
+.login_form {
+
+justify-self: flex-end;
+
+margin-right: 4.5rem;
+
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.login_content {
+
+height: 700px;
+
+}
+
+.login_form {
+
+row-gap: 2rem;
+padding: 3rem;
+
+border-radius: 1.25rem;
+
+border: 2.5px solid hsla (244, 16%, 92%, 0.75);
+
+}
+
+.login_description,
+.login_label,
+.login_button {
+font-size: var(--normal-font-size);
+ }
+.login_inputs {
+row-gap: 1.25rem;
+margin-bottom: 0.75rem;
+}
+.login_input {
+border: 2.5px solid var(-text-color);
+padding: 1rem;
+font-size: var(--small-font-size);
+
+}
+
+.login_input:focus,
+.login_input: valid {
+border: 2.5px solid var(--first-color);
+
+}
+.login_button {
+padding-block: 1rem;
+margin-bottom: 1.25rem;
+ }
+.login_button-ghost {
+border: 2.5px solid var(--first-color);
+
+ }
+}
+
